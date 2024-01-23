@@ -4,7 +4,7 @@ The benchmark consists of two applications (frame.cpp & inplace.cpp) which run t
 
 ## Function Calls till Nth Frame
 
-This graph shows the number of function calls made by each application after a particular frame has been read by both applications. Higher function call count indicates that the function polls more frequently when waiting for a valid frame i.e. each individual function call is faster.
+This graph shows the number of function calls that have been made by each application when a particular frame is read by both applications. Higher function call count indicates that the function polls more frequently when waiting for a valid frame i.e. each individual function call is faster.
 
 ## System Clock Difference on frame receive (exanic_receive_frame - exanic_receive_chunk_inplace_ex)
 
