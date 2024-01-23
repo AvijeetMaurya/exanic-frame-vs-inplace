@@ -1,6 +1,6 @@
 # Benchmark
 
-The benchmark consists of two applications (frame.cpp & inplace.cpp) which runs the respective exanic functions (`exanic_receive_frame` and `exanic_receive_chunk_inplace_ex`) till 10M frames have been read. Both applications are launched at the same time (`./frame & ./inplace.cpp &`) to ensure that they receive the same frame. After receiving a frame, some state (exanic frame receive timestamp, application frame receive timestamp, stream id, sequence no, and current function call count) is stored in a vector which is later dumped into a csv file. The jupyter notebook processes the csv to generate the following results for each stream:
+The benchmark consists of two applications (frame.cpp & inplace.cpp) which run the respective exanic functions (`exanic_receive_frame` and `exanic_receive_chunk_inplace_ex`) till 10M valid frames have been read. Both applications are launched at the same time (`./frame & ./inplace.cpp &`) to ensure that they receive the same frames. After receiving a frame, some state (exanic frame receive timestamp, application frame receive timestamp, stream id, sequence no, and current function call count) is stored in a vector which is later dumped into a csv file. The jupyter notebook processes the csv to generate the following results for each stream:
 
 ## Function Calls till Nth Frame
 
